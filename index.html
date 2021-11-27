@@ -14,7 +14,18 @@
             <!-- Navigation for Mobile-->
             <nav>
                 <div class="mobile-Nav">
-                    
+                    <img class = 'shopIcon' src="./img/iconShop.jpg" width="100px" alt="icon shop">
+                    <img class='logo' src="./img/motoaqua.png" alt="logo">
+                    <div id="burger-button" class= 'dropBurger' onclick = 'openBurgerMenu()'>
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                    </div>
+                    <div id="myDropDown" class="dropDownContent">
+                        <a href="#">tab</a>
+                        <a href="#">tab</a>
+                        <a href="#">tab</a>
+                    </div>
                 </div>
             </nav>
         </header>
@@ -23,6 +34,25 @@
             <p>Copyright &copy; 2021, Motoaqua</p>
         </footer>
        <script>
+            /* Here is code for navigation bar */
+            function openBurgerMenu() {
+                document.getElementById("myDropDown").classList.toggle("show");
+                document.getElementById('burger-button').classList.toggle('change');
+            }
+            // Close the dropdown if the user clicks outside of it
+            window.onclick = function(event) {
+                if (!event.target.matches('.dropBurger')) {
+                    let dropdowns = document.getElementsByClassName("dropDownContent");
+                    let i;
+                    for (i = 0; i < dropdowns.length; i++) {
+                        let openDropdown = dropdowns[i];
+                        if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                        }
+                    }
+                }
+            }
+           
            
        </script>
     </body>
