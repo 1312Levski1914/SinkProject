@@ -1,37 +1,48 @@
-html{
-    width: 100%;
-    padding: 0;
-    margin: 0
+:root{
+    --primary: #457B9D;
+    --secondary:  #A8DADC;
+    --paragrafs:#EFF9ED ;
+    --headings: #D84B4A;
+    --fontSizeHeadingMobile : '100px';
+    --fontSizeParagrafMobile : '26px';
 }
 body{
     margin: 0;
     padding: 0;
     width: 100%;
+    background-color: var(--secondary);
 }
-
+span{
+    color: var(--headings);
+    font-weight: bold;
+    font-size: 23px;
+}
+.webNav{
+    display: none;
+}
 .logo{
-    width: 35%;
-    height: 20%
+   width: 50%;
 }
 
 .shopIcon{
-    width: 45px;
-    height: 35px;
+    width: 10%;
+
 }
 .mobile-Nav{
-    position: sticky;
-    top: 0px;
-    background-color: white;
-    width: 100%;
-    z-index: 1;
+    background-color: var(--primary) ;
+    z-index: 12;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
     align-items: center;
+    padding: 15px;
+    position: fixed;
+    top: 0px;
+    
 }
 .bar1, .bar2, .bar3{
     width: 30px;
-    background-color: black;
+    background-color: var(--headings);
     margin: 6px 0;
     transition: 0.4s;
     padding: 2px;
@@ -39,8 +50,7 @@ body{
 }
 #burger-button{
     font-size: 16px;
-    background-color: none;
-    position: relative;
+    padding: 5px;
 }
 .change .bar1 {
     -webkit-transform: rotate(-45deg) translate(10px, 8px);
@@ -59,55 +69,245 @@ body{
     border: none;
 
 }
+#moreNav{
+    display: none;
+}
 
 .dropDownContent{
     display: none;
     min-width: 160px;
     width: 100%;
-    overflow: auto;
+    overflow: hidden;
     box-shadow: 0px 33px 44px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-    background-color: red;
+    z-index: 10;
+    background-color: var(--secondary);
+    text-align: center;
     
 }
 
 .dropDownContent a{
-    color: black;
+    color: var(--primary);
     padding: 33px;
     text-decoration: none;
     display: block;
-    text-align: center;
     text-transform: uppercase;
-    width: 333px;
     font-size: 44px;
 }
 #myDropDown{
     position: fixed;
     right: 0;
-    top: 10%;
+    top: 7%;
 
 }
 
 .show{display: block;}
 
-.howItWorks {
-    width: 100%;
+/* Here end NAV!  */
+.headings{
+    font-size: 20px;
+    font-family: 'Aqua Grotesque', sans-serif;;
+    text-transform: uppercase;
 }
-.soundsGallery{
-    padding: 20px;
-    text-align: center;
-}
-.sounds{
-    display: flex;
-    text-align: center;
-    justify-content: space-evenly;
-    gap: 40px;
-    
+.paragrafs{
+    color: var(--paragrafs);
+    font-size: 16px;
 }
 
-#footer{
+/* HEADER IMAGE  */
+.header{
+    margin-top: 70px;
+    position: relative;
+    text-align: center;
+    color:var(--paragrafs) ;
+
+}
+.headerImg{
+    width: 100%;
+}
+.headerText{
+    z-index: 1;
+    padding: 25px 15px;
+    background-color: var(--primary);
+    color: var(--paragrafs);
+    opacity: 0.65;
+    justify-content: center;
+    align-content: center;
+    font-size: 16px;
+    text-align: center; 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.HowWhat{
+    margin: 30px;
+    background-color: var(--primary);
+    padding: 15px;
+    text-align: center;
+    border-radius: 40px;
+}
+
+.HowWhat h2{
+    color: var(--paragrafs);
+}
+.review{
+    background-color: var(--primary);
+    width: 100%;
+    height: 100%;
+    border-radius: 15%;
+    color: var(--paragrafs);
+}
+.review div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: space-between;
+    padding: 10px;
+}
+.review div p{
+    width: 70%;
+    text-align: center;
+}
+.reviewImg{
+    width: 150px;
+    border-radius: 100%;
+
+}
+.fiveStars{
+    width: 50%;
+    height: 1%;
+}
+.subscribe{
+    background-color: var(--primary);
+    border-radius: 35px 35px 0px 0px;
+    height: 100%;
+    padding: 30px;
+    color: var(--paragrafs);
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+}
+.subscribe input{
+    border-radius: 30px;
+    height: 20px;
+    padding: 8px;
+    font-size: 16px;
+    width: 100%;
+}
+.socialIcons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+.socialIcons img{
+    width: 44px;
+    padding: 5px;
+}
+
+footer{
     position: relative;
     bottom: 0px;
-    height: 10%;
+    background-color:#555353 ;
     text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: var(--paragrafs);
+
+}
+.Aqua{
+    font-size: 24px;
+    color: var(--paragrafs);
+}
+@media( min-width: 455px){
+    p{
+        font-size: 25px;
+    }
+    .mobile-Nav{
+        display: none;
+    }
+    .webNav{
+        display: block;
+        height: 50px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 30px;
+        position: relative;
+        align-items: center;
+       
+        text-transform: uppercase;
+
+    }
+    .webNav a{
+        font-size: 26px;
+        text-decoration: none;
+    }
+    .more{
+        position: absolute;
+        right: 10%;
+    }
+    .webNav img{
+        width: 350px;
+    }
+    .header{
+        margin-top: 0px;
+    }
+    .headerImg{
+        height: 1000px;
+    }
+    .headerText{
+        font-size: 36px;
+        padding: 80px 15px;
+    }
+    .firstSection{
+        display: flex;
+        padding: 100px;
+        justify-content: space-around;
+    }
+    .HowWhat{
+        width: 300px;
+        height: 100%;
+        font-size: 26px;
+    }
+    .paragrafs{
+        font-size: 26px;
+    }
+    .review{
+        display: flex;
+        justify-content: space-around;
+        border-radius: 30px;
+        width: 100%;
+
+    }
+    .reviewImg{
+        width: 300px;
+    }
+    .review div h2{
+        font-size: 36px;
+    }
+    .review div span{
+        font-size: 36px
+    }
+    .fiveStars{
+        height: 50px;
+        margin: 30px;
+    }
+    main{
+        gap: 100px;
+    }
+    .subscribe{
+        padding: 50px;
+    }
+    .subscribe p{
+        font-size: 26px;
+
+    }
 }
