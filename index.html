@@ -78,5 +78,34 @@
         <footer>
             <p>Copyright &copy; 2021, <br> <span>Moto</span> <span class='Aqua'>Aqua</span> </p>
         </footer>
+<<<<<<< HEAD
+=======
+       <script>
+            /* Here is code for navigation bar */
+            function openBurgerMenu() {
+                document.getElementById("myDropDown").classList.toggle("show");
+                document.getElementById('burger-button').classList.toggle('change');
+            }
+            // Close the dropdown if the user clicks outside of it
+            window.onclick = function(event) {
+                if (!event.target.matches('.dropBurger')) {
+                    let dropdowns = document.getElementsByClassName("dropDownContent");
+                    let i;
+                    for (i = 0; i < dropdowns.length; i++) {
+                        let openDropdown = dropdowns[i];
+                        if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                        }
+                    }
+                }
+            }
+            // JS for sound
+            function playAudio(url) {
+                new Audio(url).play();
+                }
+       </script>
+       <p>alex was here</p>
+        <p>filip was also here</p>
+>>>>>>> main
     </body>
 </html>
