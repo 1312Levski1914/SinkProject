@@ -13,6 +13,7 @@ window.onclick = function(event) {
             let openDropdown = dropdowns[i];
             if (openDropdown.classList.contains('show')) {
             openDropdown.classList.remove('show');
+            document.getElementById('burger-button').classList.remove('change');
             }
         }
     }

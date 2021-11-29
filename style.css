@@ -195,10 +195,13 @@ main{
 }
 .subscribe input{
     border-radius: 30px;
-    height: 20px;
+    height: 40px;
     padding: 8px;
     font-size: 16px;
     width: 100%;
+}
+::placeholder{
+    color: var(--primary);
 }
 .socialIcons{
     display: flex;
@@ -225,6 +228,61 @@ footer{
 .Aqua{
     font-size: 24px;
     color: var(--paragrafs);
+}
+
+/*  Style for Contact us Page Start here!   */
+.takeFeedBack{
+    margin-top: 110px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    padding: 15px;
+}
+.takeFeedBack h2{
+    text-align: center;
+    color: var(--primary);
+}
+.nameInput{
+    background-color: var(--primary);
+    color: var(--secondary);
+    height: 50px;
+    width: 50%;
+    font-size: 20px;
+    padding: 10px;
+
+}
+.textInput{
+    background-color: var(--primary);
+    height: 130px;
+    align-items: start;
+    font-size: 20px;
+}
+.takeFeedBack ::placeholder{
+    text-align: left;
+    color: var(--secondary);
+}
+.feedBackButton{
+    background-color: var(--primary);
+    color: var(--secondary);
+    font-size: 26px;
+    width: 40%;
+    text-align: center;
+    position: relative;
+    left: 30%;
+}
+.OurStaffMembers{
+    width: 100%;
+    display: flex;
+    font-size: 20px;
+    justify-content: space-evenly;
+   
+}
+h6{
+    color: var(--primary);
+}
+.OurStaffMembers div img{
+    width: 150px;
 }
 @media( min-width: 455px){
     p{
@@ -309,5 +367,11 @@ footer{
     .subscribe p{
         font-size: 26px;
 
+    }
+    /*  Contact Page WEB  */
+    
+    .mainForContact{
+        display: flex;
+        flex-direction: column;
     }
 }
