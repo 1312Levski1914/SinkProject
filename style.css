@@ -284,6 +284,14 @@ h6{
 .OurStaffMembers div img{
     width: 150px;
 }
+/*  productAbouy Page WEB  */
+
+
+
+/*  Comunity Page Mobile!!!  */
+
+
+
 @media( min-width: 455px){
     p{
         font-size: 25px;
@@ -368,16 +376,14 @@ h6{
         font-size: 26px;
 
     }
-    /*  Contact Page WEB  */
+    /*  productAbouy Page WEB  */
     
     .mainForContact{
         display: flex;
         flex-direction: column;
     }
+     /*  Comunity Page WEB!!!  */
+
+
 }
- /*  Comunity Page Mobile!!!  */
 
-
- /*  Comunity Page WEB!!!  */
-
- 
