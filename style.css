@@ -388,11 +388,28 @@ h6{
     width: 150px;
 }
 /*  productAbouy Page WEB  */
-
-
+/*About us page - mobile*/
+.aboutus-heading1{
+    text-align: center;
+    border: 2px solid yellow;
+}
 
 /*  Comunity Page Mobile!!!  */
 
+
+
+.content_text{
+    background-color: var(--primary);
+    border-radius: 35px ;
+    width: 50%;
+    max-width: 80%;
+    margin: 30px auto;
+    padding: 15px;
+    text-align: center;
+    border: 2px solid rgb(255, 0, 43);
+}
+
+/*  Comunity Page Mobile END!!!  */
 
 
 @media( min-width: 455px){
@@ -544,7 +561,11 @@ h6{
         display: flex;
         flex-direction: column;
     }
-     /*  Comunity Page WEB!!!  */
+    /*  Comunity Page WEB!!!  */
+    .content_text{
+        width: 80%;
+        max-width: 40%;
+    }
 
 
 }
