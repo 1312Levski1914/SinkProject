@@ -383,7 +383,10 @@ h6{
 }
 /*  productAbouy Page WEB  */
 /*About us page - mobile*/
-
+.aboutus-heading1{
+    text-align: center;
+    border: 2px solid yellow;
+}
 
 /*  Comunity Page Mobile!!!  */
 
