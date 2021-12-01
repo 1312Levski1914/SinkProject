@@ -18,12 +18,9 @@ function openBurgerMenu() {
         }
     }
 }
-    function showMore(){
-    document.getElementById('moreNav').classList.toggle('show');
-}
-// JS for sound
-function playAudio(url) {
-    new Audio(url).play();
+    function showMore() {
+    let dropdown = document.getElementById('webDropDown');
+    dropdown.style.display = 'flex';
 }
 function showProduct(){
     let productsE1 = document.getElementById('shop');

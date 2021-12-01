@@ -3,8 +3,6 @@
     --secondary:  #A8DADC;
     --paragrafs:#EFF9ED ;
     --headings: #D84B4A;
-    --fontSizeHeadingMobile : '100px';
-    --fontSizeParagrafMobile : '26px';
 }
 body{
     margin: 0;
@@ -12,10 +10,24 @@ body{
     width: 100%;
     background-color: var(--secondary);
 }
+.headings{
+    font-size: 20px;
+    font-family: 'Aqua Grotesque', sans-serif;;
+    text-transform: uppercase;
+}
+.paragrafs{
+    color: var(--paragrafs);
+    font-size: 16px;
+}
 span{
     color: var(--headings);
     font-weight: bold;
     font-size: 23px;
+}
+
+ /*                                                                                                                HEADER START HERE  */
+#more{
+    display: none;
 }
 .webNav{
     display: none;
@@ -23,10 +35,39 @@ span{
 #shop{
     display: none;
 }
+
 .container{
     display: none;
 }
-#shop{
+
+ /*                                                                                                                Shop List Start Here  */
+ #shop{
+    margin-top: 10px;
+}
+.shop-itemss{
+    margin: 10px;
+}
+.btn{
+    text-align: center;
+    vertical-align: middle;
+    padding:.67em .67em;
+    cursor: pointer;
+}
+.btn-header{
+    margin: .5em 15% 2em 15%;
+    color: var(--secondary);
+}
+.btn-primary{
+    color: var(--secondary);
+    background-color: var(--primary);
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+}
+.btn-primary:hover{
+    background-color: var(--headings);
+}
+ #shop{
     margin-top: 120px;
 }
 .shop-items{
@@ -50,6 +91,8 @@ span{
     padding: 5px;
     text-align: center;
 }
+
+ /*                                                                                                               CART start here! */
 
 .cart-header{
     font-weight: bold;
@@ -154,6 +197,8 @@ span{
 .iconshop{
     width: 10px;
 }
+
+ /*                                                                                                                Mobile NAV */
 .mobile-Nav{
     background-color: var(--primary) ;
     z-index: 12;
@@ -225,22 +270,12 @@ span{
     top: 7%;
 
 }
-
-
 .show{display: block;}
 
-/* Here end NAV!  */
-.headings{
-    font-size: 20px;
-    font-family: 'Aqua Grotesque', sans-serif;;
-    text-transform: uppercase;
-}
-.paragrafs{
-    color: var(--paragrafs);
-    font-size: 16px;
-}
+/* Here                                                                                                                         end NAV!  */
 
-/* HEADER IMAGE  */
+
+/*                                                                                                                           HEADER IMAGE  */
 .header{
     margin-top: 70px;
     position: relative;
@@ -266,6 +301,7 @@ span{
     left: 50%;
     transform: translate(-50%, -50%);
 }
+/* Here                                                                                                                         Main start here  */
 main{
     display: flex;
     flex-direction: column;
@@ -310,6 +346,7 @@ main{
     width: 50%;
     height: 1%;
 }
+/* Here                                                                                                                         fooooter  */
 .subscribe{
     background-color: var(--primary);
     border-radius: 35px 35px 0px 0px;
@@ -330,6 +367,8 @@ main{
 ::placeholder{
     color: var(--primary);
 }
+
+
 .socialIcons{
     display: flex;
     flex-direction: row;
@@ -440,46 +479,23 @@ h6{
     p{
         font-size: 25px;
     }
-    #shop{
-        margin-top: 10px;
-    }
-    .shop-itemss{
-        margin: 10px;
-    }
-    .btn{
-        text-align: center;
-        vertical-align: middle;
-        padding:.67em .67em;
-        cursor: pointer;
-    }
-    .btn-header{
-        margin: .5em 15% 2em 15%;
-        color: var(--secondary);
-    }
-    .btn-primary{
-        color: var(--secondary);
-        background-color: var(--primary);
-        border: none;
-        border-radius: .3em;
-        font-weight: bold;
-    }
-    .btn-primary:hover{
-        background-color: var(--headings);
-    }
+    
     .mobile-Nav{
         display: none;
     }
+    
+   
     .webNav{
-        display: block;
-        height: 50px;
+        
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         padding: 30px;
-        position: relative;
         align-items: center;
        background-color:var(--primary);
         text-transform: uppercase;
+        position: sticky;
+        top: 0px;
 
     }
     .webNav a{
@@ -507,6 +523,18 @@ h6{
         width: 26px;
         
     }
+    #webDropDown{
+        flex-direction: column;
+        z-index: 15;
+        background-color: var(--secondary);
+        position: absolute;
+        top: 20px;
+        left: 100px;
+        gap: 10px;
+        color: var(--primary);
+    }
+    .show{display: block;}
+
     .header{
         margin-top: 0px;
     }
@@ -571,7 +599,7 @@ h6{
         width: 80%;
         max-width: 40%;
     }
-
+    
 
 }
 
