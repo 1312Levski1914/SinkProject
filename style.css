@@ -420,6 +420,17 @@ h6{
     border: 2px solid rgb(255, 0, 43);
 }
 
+.content_picture{
+    border-radius: 35px; /*not working*/
+    border: solid;
+    width: 50%;
+    max-width: 80%;
+    width: 50%;
+    max-width: 80%;
+    margin: 30px auto;
+    padding: 15px;
+}
+
 /*  Comunity Page Mobile END!!!  */
 
 
@@ -566,6 +577,10 @@ h6{
     }
     /*  Comunity Page WEB!!!  */
     .content_text{
+        width: 80%;
+        max-width: 40%;
+    }
+    .content_picture{
         width: 80%;
         max-width: 40%;
     }
