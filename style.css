@@ -26,13 +26,19 @@ span{
 .container{
     display: none;
 }
+
 .cart-header{
     font-weight: bold;
     font-size: 1.25em;
     color: var(--primary);
 }
+.productText{
+    font-size: 15px;
+    
+}
 .cart-column{
     display: flex;
+    
     align-items: center;
     border-bottom: 1px solid var(--primary);
     margin-right: 1.5em;
@@ -387,40 +393,6 @@ h6{
 
 /*  Comunity Page Mobile!!!  */
 
-.community-text-center{
-    z-index: 1;
-    margin-top: 130px;
-    text-align: center;
-        
-    border: 2px solid yellow;
-}
-
-/*not needed, if I want the background going around the text
-.content{
-    
-    background-color: var(--primary);
-    border-radius: 35px ;
-    width: 50%;
-    max-width: 80%;
-    margin: 30px;
-    padding: 15px;
-    border: 2px solid rgb(76, 0, 255);
-    
-}
-*/
-
-.content_text{
-    background-color: var(--primary);
-    border-radius: 35px ;
-    width: 50%;
-    max-width: 80%;
-    margin: 30px auto;
-    padding: 15px;
-    text-align: center;
-    border: 2px solid rgb(255, 0, 43);
-}
-
-/*  Comunity Page Mobile END!!!  */
 
 
 @media( min-width: 455px){
@@ -428,6 +400,7 @@ h6{
         font-size: 25px;
     }
     .shop-items{
+        
         margin: 10px;
     }
     .btn{
@@ -483,9 +456,16 @@ h6{
     .shop-items{
         display: flex;
         width: 20%;
+        margin: 10px;
+    }
+    .shop-itemss{
+        display: flex;
+        flex-direction: row;
     }
     .shop-item-image{
-        width: 50%;
+        padding-left: 50%;
+        width: 150px;
+        height: 150px;
     }
     .shop-item-details{
         display: flex;
@@ -564,17 +544,7 @@ h6{
         display: flex;
         flex-direction: column;
     }
-    /*  Comunity Page WEB!!!  */
-    .content_text{
-        width: 80%;
-        max-width: 40%;
-    }
-
-    .content{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
+     /*  Comunity Page WEB!!!  */
 
 
 }
