@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Save water Save Earth</title>
+        <link rel="icon" href="./img/motoaqua.png" type="img/x-icon">
+        <meta name="discription" content="Awesome water save solution">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content=' web design blog,SaveWater,stop waste water'>
+        <link rel="stylesheet" href="style.css">
+        <link href='https://fonts.googleapis.com/css?family=Aclonica' rel='stylesheet'>
+    </head>
+    <body>      
+        <header>
+            <!-- Navigation for Mobile-->
+            <nav>
+                <div class="mobile-Nav">
+                    <img class = 'shopIcon' src="./img/iconShop.jpg" width="100px" alt="icon shop">
+                    <img class='logo' src="./img/motoaqua.png" alt="logo">
+                    <div id="burger-button" class= 'dropBurger' onclick = 'openBurgerMenu()'>
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                    </div>
+                    <div id="myDropDown" class="dropDownContent">
+                        <a href="./index.html">tab</a>
+                        <a href="#">tab</a>
+                        <a href="#">tab</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+       <main>
+           <section class='howItWorks'>
+               <h2>How it works</h2>
+               <video src="./img/video.mp4" autoplay muted width="100%" ></video>
+           </section>
+           <section class= 'howEasyToInstal'>
+               <h2>Quick guide how to instal:</h2>
+               <img src="./img/save_water.jpg" alt="how to instal" width="100%">
+           </section>
+           <section class= 'soundsGallery'>
+               <h2>Preinstalled sounds</h2>
+                <div class="sounds" onclick = 'playAudio("./img/carSound.wav")'>
+                   <img src="./img/soundIcon.jpg" width="50px" alt="soundIconFail">
+                   <p >CarSound</p>
+                </div>
+                <div class="sounds" onclick = 'playAudio("./img/relaxingMelody.mp3")'>
+                    <img src="./img/soundIcon.jpg" width="50px" alt="soundIconFail">
+                    <p >Relaxing Melody</p>
+                </div>
+                <div class="sounds" onclick = 'playAudio("./img/shockwave.mp3")'>
+                    <img src="./img/soundIcon.jpg" width="50px" alt="soundIconFail">
+                    <p >Marshmello - Shockwave</p>
+                </div>
+           </section>
+       </main>
+        <footer id='footer'>
+            <p>Copyright &copy; 2021, MotoAqua</p>
+        </footer>
+       <script>
+            /* Here is code for navigation bar */
+            function openBurgerMenu() {
+                document.getElementById("myDropDown").classList.toggle("show");
+                document.getElementById('burger-button').classList.toggle('change');
+            }
+            // Close the dropdown if the user clicks outside of it
+            window.onclick = function(event) {
+                if (!event.target.matches('.dropBurger')) {
+                    let dropdowns = document.getElementsByClassName("dropDownContent");
+                    let i;
+                    for (i = 0; i < dropdowns.length; i++) {
+                        let openDropdown = dropdowns[i];
+                        if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                        }
+                    }
+                }
+            }
+            // JS for sound
+            function playAudio(url) {
+                new Audio(url).play();
+                }
+       </script>
+    </body>
+</html>
