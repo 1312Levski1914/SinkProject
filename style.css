@@ -26,6 +26,30 @@ span{
 .container{
     display: none;
 }
+#shop{
+    margin-top: 120px;
+}
+.shop-items{
+    display: flex;
+    width: 20%;
+    margin: 10px;
+}
+.shop-itemss{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.shop-item-image{
+    width: 150px;
+    height: 150px;
+}
+.shop-item-details{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 5px;
+    text-align: center;
+}
 
 .cart-header{
     font-weight: bold;
@@ -416,8 +440,10 @@ h6{
     p{
         font-size: 25px;
     }
-    .shop-items{
-        
+    #shop{
+        margin-top: 10px;
+    }
+    .shop-itemss{
         margin: 10px;
     }
     .btn{
@@ -461,42 +487,21 @@ h6{
         text-decoration: none;
         color: var(--paragrafs);
     }
+    .trolley{
+        display: flex;
+        padding: 8px;
+    }
     .iconshop{
         width: 10px;
-        padding: 5px;
     }
     .webNav a:hover{
         background-color:#a8d9db;
         color: var(--headings);
         border-radius: 10px;
     }
-    .shop-items{
-        display: flex;
-        width: 20%;
-        margin: 10px;
-    }
-    .shop-itemss{
-        display: flex;
-        flex-direction: row;
-    }
-    .shop-item-image{
-        padding-left: 50%;
-        width: 150px;
-        height: 150px;
-    }
-    .shop-item-details{
-        display: flex;
-        flex-direction: column;
-        gap: 8px;
-        padding: 5px;
-        text-align: center;
-    }
-    .more{
-        position: absolute;
-        right: 10%;
-    }
-    .webNav img{
+    .motoImg{
         width: 350px;
+        text-align: center;
     }
     .webNav a img{
         width: 26px;

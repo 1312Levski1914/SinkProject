@@ -26,9 +26,11 @@ function playAudio(url) {
     new Audio(url).play();
 }
 function showProduct(){
-    let productElement = document.getElementById('shop');
-    productElement.style.display = 'block';
-    productsE1.style.display =  'block';
+    let productsE1 = document.getElementById('shop');
+
+    productsE1.style.display = 'block';
+    document.getElementById('shop').style.display = 'block';
+    
 }
 function showCart(){
     let cart = document.getElementById('cart');
@@ -52,7 +54,7 @@ function renderProducts(){
                 </div>
             </div>
         `
-        productsE1.style.display =  'none';
+        
     })
 }
 renderProducts();
@@ -135,3 +137,4 @@ function changeNumberOfUnits(action,id){
     })
     updateCart();
 }
+showItem()
