@@ -1,4 +1,21 @@
+function openMore(){
+    document.getElementById('webDropDown').classList.toggle('show');
+    window.onclick = function(event){
+        if(!event.target.matches('.dropBtn')){
+            let dropDown = document.getElementsByClassName('dropdown-content');
+            
+            for(let i=0; i<dropDown.length ; i++){
+                let openDropDown = dropDown[i];
+                if(openDropDown.classList.contains('show')){
+                    openDropDown.classList.remove('show');
+                }
+            }
+        }
+    }
+}
 
+/* When user click on button show nav */
+/* Close the dropdown menu if user click outside of it  */
 /* Here is code for burger button */
 function openBurgerMenu() {
     document.getElementById('burger-button').classList.toggle('change');
@@ -27,7 +44,9 @@ function showProduct(){
 
     productsE1.style.display = 'block';
     document.getElementById('shop').style.display = 'block';
-    
+    if(productsE1.display == 'block'){
+        productsE1.display = 'none';
+    }
 }
 function showCart(){
     let cart = document.getElementById('cart');

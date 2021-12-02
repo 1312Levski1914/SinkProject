@@ -67,9 +67,6 @@ span{
 .btn-primary:hover{
     background-color: var(--headings);
 }
- #shop{
-    margin-top: 120px;
-}
 .shop-items{
     display: flex;
     width: 20%;
@@ -483,25 +480,32 @@ h6{
     .mobile-Nav{
         display: none;
     }
-    
-   
     .webNav{
-        
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         padding: 30px;
         align-items: center;
-       background-color:var(--primary);
+        background-color:var(--primary);
         text-transform: uppercase;
-        position: sticky;
-        top: 0px;
-
     }
     .webNav a{
         font-size: 26px;
         text-decoration: none;
         color: var(--paragrafs);
+        padding: 5px;
+    }
+    .dropBtn{
+        font-size: 26px;
+        text-decoration: none;
+        color: var(--paragrafs);
+        padding: 5px;
+        cursor: pointer;
+    }
+    .dropBtn:hover{
+        background-color:var(--secondary);
+        color: var(--headings);
+        border-radius: 10px;
     }
     .trolley{
         display: flex;
@@ -511,7 +515,7 @@ h6{
         width: 10px;
     }
     .webNav a:hover{
-        background-color:#a8d9db;
+        background-color:var(--secondary);
         color: var(--headings);
         border-radius: 10px;
     }
@@ -521,15 +525,31 @@ h6{
     }
     .webNav a img{
         width: 26px;
-        
     }
+    .dropdown{
+        position: relative;
+        display: inline-block;
+    }
+    .dropdown-content{
+        display: none;
+        position: absolute;
+        background-color: var(--secondary);
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 10;
+    }
+    .dropdown-content a{
+        color: var(--primary);
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+    
+    .dropdown-content a:hover{background-color: var(--primary);}
     #webDropDown{
         flex-direction: column;
         z-index: 15;
         background-color: var(--secondary);
-        position: absolute;
-        top: 20px;
-        left: 100px;
         gap: 10px;
         color: var(--primary);
     }
