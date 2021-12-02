@@ -10,6 +10,8 @@
         <link href='https://fonts.googleapis.com/css?family=Aclonica' rel='stylesheet'>
         <script src='./javascript.js' async></script>
         <script src="./product.js"></script>
+        <link href='https://fonts.googleapis.com/css?family=Aclonica' rel='stylesheet'>   
+        <link href="http://fonts.cdnfonts.com/css/aqua-grotesque" rel="stylesheet">
     </head>
     <body>      
         <header>
@@ -77,34 +79,71 @@
                 </section>
             </nav>
         </header>
-       <main>
-           <section class='howItWorks'>
-               <h2>How it works</h2>
-               <video src="./img/video.mp4" autoplay muted width="100%" ></video>
-           </section>
-           <section class= 'howEasyToInstal'>
-               <h2>Quick guide how to instal:</h2>
-               <img src="./img/save_water.jpg" alt="how to instal" width="100%">
-           </section>
-           <section class= 'soundsGallery'>
-               <h2>Preinstalled sounds</h2>
-                <div class="sounds" onclick = 'playAudio("./img/carSound.wav")'>
-                   <img src="./img/soundIcon.jpg" width="50px" alt="soundIconFail">
-                   <p >CarSound</p>
-                </div>
-                <div class="sounds" onclick = 'playAudio("./img/relaxingMelody.mp3")'>
-                    <img src="./img/soundIcon.jpg" width="50px" alt="soundIconFail">
-                    <p >Relaxing Melody</p>
-                </div>
-                <div class="sounds" onclick = 'playAudio("./img/shockwave.mp3")'>
-                    <img src="./img/soundIcon.jpg" width="50px" alt="soundIconFail">
-                    <p >Marshmello - Shockwave</p>
-                </div>
-           </section>
-       </main>
-        <footer id='footer'>
-            <p>Copyright &copy; 2021, MotoAqua</p>
-        </footer>
+        </section>
+    </section>
+    <section class='howItWorks'>
+        <h1 class="productheading">How it works</h1>
+        <video src="./img/washingthumbup2.MOV" autoplay controls="1" muted width="100%" ></video>
+    </section>
+    <section class= 'howEasyToInstal'>
+        <h1 class="productheading">Quick guide how to instal:</h1>
+        <img class="faucetimg" src="./img/faucet2.png" alt="how to instal" width="75%" ">
+    </section>
+  
+     <h1 class="productheading">Preinstalled sounds</h1>
+     <br>
+        <section class= 'soundsgallery'>
+         <section class ="flexingsounds1" onclick = 'playAudio("./img/carSound.wav")'>
+            <img class="sound1"src="./img/soundicon2.png" width="70px" alt="soundIconFail">
+            <p class="movingtext1">CarSound</p>
+         </section>
+         <section class ="flexingsounds2" onclick = 'playAudio("./img/relaxingMelody.mp3")'>
+             <img class="sound2"src="./img/soundicon2.png" width="70px" alt="soundIconFail">
+             <p class="movingtext2">Relaxing Melody</p>
+         </section>
+         <section class ="flexingsounds3" onclick = 'playAudio("./img/shockwave.mp3")'>
+             <img class="sound3"src="./img/soundicon2.png" width="70px" alt="soundIconFail">
+             <p class="movingtext3">Marshmello - Shockwave</p>
+         </section>
+    </section>
+<section class="textfaq">
+    <details open>
+ <summary>Is it worth it to buy faucet pedal</summary>
+   <p>It will pay off on average in year.But its priceless for earth.</p>
+</details>
+<details>
+ <summary>For which countries delivery is available</summary>
+   <p></p>
+</details>
+<details>
+ <summary>What if i installed it incorrectly ?</summary>
+   <p>Better luck next time then</p>
+ </div>
+</details>
+<details>
+ <summary>What should I do if pedal broke ?</summary>
+   <p>If warrant is still up we will happy to send you new pedal 
+       but before please contact customer support</p>
+</details>
+<details>
+ <summary>enter more questions </summary>
+   <p></p>
+
+</details>
+</section>
+<section class='subscribe'>
+ <p>Subscribe with your E-mail and <span>get 20% off</span></p>
+ <input type="e-mail" placeholder="Please enter your E-Mail">
+ <div class= 'socialIcons'>
+     <img src="./img/twiter.png" alt="twiter">
+     <img src="./img/facebook.png" alt="facebook">
+     <img src="./img/instagram.png" alt="instagram">
+     <img src="./img/youtube.png" alt="youtube">
+ </div>
+</section>
+<footer>
+<p>Copyright &copy; 2021, <br> <span>Moto</span> <span class='Aqua'>Aqua</span> </p>
+</footer>
        <script>
             /* Here is code for navigation bar */
             function openBurgerMenu() {

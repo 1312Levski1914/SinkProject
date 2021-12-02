@@ -460,7 +460,7 @@ h6{
 .OurStaffMembers div img{
     width: 150px;
 }
-/*  productAbouy Page WEB  */
+
 /*About us page - mobile*/
 .aboutus-heading1{
     text-align: center;
@@ -697,7 +697,88 @@ h6{
         font-size: 26px;
 
     }
-    /*  productAbouy Page WEB  */
+    /*  About product Page WEB  alex  */
+
+.flexingsounds1{
+    display: flex;
+    justify-content: flex-start;
+}
+.flexingsounds2{
+    display: flex;
+    justify-content: flex-start;
+}
+.flexingsounds3{
+    display: flex;
+    justify-content: flex-start;
+}
+.sound1{
+    margin-left:3rem;
+    padding:0.5rem;
+}
+.sound2{
+    margin-left:3rem;
+    padding:0.5rem;
+    }
+.sound3{
+    margin-left:3rem;
+    padding:0.5rem;
+}
+.movingtext1{
+    margin-left:3rem;
+}
+.movingtext2{
+    margin-left:3rem;
+}
+.movingtext3{
+    margin-left:3rem;
+}
+.midtext1{
+text-align: center;
+}
+summary {
+    background-color: #fff;
+    color: #333;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    outline: none;
+    border-radius: 0.25rem;
+    text-align: left;
+    cursor: pointer;
+    position: relative;
+    margin:1rem;
+    padding:1rem;
+  }
+  details > summary::after {
+    position: absolute;
+    content: "+";
+    right: 2rem;
+  }
+  details[open] > summary::after {
+    position: absolute;
+    content: "-";
+    right: 2rem;
+  }
+  details > summary::-webkit-details-marker {
+    display: none;
+  }
+  .productheading{
+      margin-left: 3rem;
+  }
+  .faucetimg{
+    margin: auto;
+    display: block;
+    border-radius: 10%;
+  }
+  .textfaq{
+      text-align: center;
+  }
+  @media( min-width: 1200px){
+    .soundsgallery{
+        display: flex;
+        justify-content: space-evenly;
+    }
+}
+/*  End of About product Page WEB  alex  */
     
     .mainForContact{
         display: flex;
