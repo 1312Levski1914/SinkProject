@@ -3,6 +3,8 @@
     --secondary:  #A8DADC;
     --paragrafs:#EFF9ED ;
     --headings: #D84B4A;
+    --fontSizeHeadingMobile : '100px';
+    --fontSizeParagrafMobile : '26px';
 }
 body{
     margin: 0;
@@ -10,24 +12,10 @@ body{
     width: 100%;
     background-color: var(--secondary);
 }
-.headings{
-    font-size: 20px;
-    font-family: 'Aqua Grotesque', sans-serif;;
-    text-transform: uppercase;
-}
-.paragrafs{
-    color: var(--paragrafs);
-    font-size: 16px;
-}
 span{
     color: var(--headings);
     font-weight: bold;
     font-size: 23px;
-}
-
- /*                                                                                                                HEADER START HERE  */
-#more{
-    display: none;
 }
 .webNav{
     display: none;
@@ -35,77 +23,16 @@ span{
 #shop{
     display: none;
 }
-
 .container{
     display: none;
 }
-
- /*                                                                                                                Shop List Start Here  */
- #shop{
-    margin-top: 10px;
-}
-.shop-itemss{
-    margin: 10px;
-}
-.btn{
-    text-align: center;
-    vertical-align: middle;
-    padding:.67em .67em;
-    cursor: pointer;
-}
-.btn-header{
-    margin: .5em 15% 2em 15%;
-    color: var(--secondary);
-}
-.btn-primary{
-    color: var(--secondary);
-    background-color: var(--primary);
-    border: none;
-    border-radius: .3em;
-    font-weight: bold;
-}
-.btn-primary:hover{
-    background-color: var(--headings);
-}
- #shop{
-    margin-top: 120px;
-}
-.shop-items{
-    display: flex;
-    width: 20%;
-    margin: 10px;
-}
-.shop-itemss{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-.shop-item-image{
-    width: 150px;
-    height: 150px;
-}
-.shop-item-details{
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    padding: 5px;
-    text-align: center;
-}
-
- /*                                                                                                               CART start here! */
-
 .cart-header{
     font-weight: bold;
     font-size: 1.25em;
     color: var(--primary);
 }
-.productText{
-    font-size: 15px;
-    
-}
 .cart-column{
     display: flex;
-    
     align-items: center;
     border-bottom: 1px solid var(--primary);
     margin-right: 1.5em;
@@ -197,8 +124,6 @@ span{
 .iconshop{
     width: 10px;
 }
-
- /*                                                                                                                Mobile NAV */
 .mobile-Nav{
     background-color: var(--primary) ;
     z-index: 12;
@@ -270,12 +195,22 @@ span{
     top: 7%;
 
 }
+
+
 .show{display: block;}
 
-/* Here                                                                                                                         end NAV!  */
+/* Here end NAV!  */
+.headings{
+    font-size: 20px;
+    font-family: 'Aqua Grotesque', sans-serif;;
+    text-transform: uppercase;
+}
+.paragrafs{
+    color: var(--paragrafs);
+    font-size: 16px;
+}
 
-
-/*                                                                                                                           HEADER IMAGE  */
+/* HEADER IMAGE  */
 .header{
     margin-top: 70px;
     position: relative;
@@ -301,7 +236,6 @@ span{
     left: 50%;
     transform: translate(-50%, -50%);
 }
-/* Here                                                                                                                         Main start here  */
 main{
     display: flex;
     flex-direction: column;
@@ -346,7 +280,6 @@ main{
     width: 50%;
     height: 1%;
 }
-/* Here                                                                                                                         fooooter  */
 .subscribe{
     background-color: var(--primary);
     border-radius: 35px 35px 0px 0px;
@@ -367,8 +300,6 @@ main{
 ::placeholder{
     color: var(--primary);
 }
-
-
 .socialIcons{
     display: flex;
     flex-direction: row;
@@ -454,35 +385,42 @@ h6{
 /*About us page - mobile*/
 .aboutus-heading1{
     text-align: center;
-    
-}
-.about-img{
-    width: 150px;
-    border-radius: 50%;
-    
 }
 .about-staff{
+    background-color: var(--primary);
+    width: 100%;
+    height: 100%;
+}
+.staff-members{
     background-color: var(--primary);
     width: 100%;
     height: 100%;
     border-radius: 15%;
     color: var(--paragrafs);
 }
-.about-staff div{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    align-content: space-between;
-    padding: 10px;
-}
-.about-staff div p{
-    width: 70%;
-    text-align: center;
-}
 /*  Comunity Page Mobile!!!  */
 
+.community-text-center{
+    z-index: 1;
+    margin-top: 130px;
+    text-align: center;
+        
+    border: 2px solid yellow;
+}
 
+/*not needed, if I want the background going around the text
+.content{
+    
+    background-color: var(--primary);
+    border-radius: 35px ;
+    width: 50%;
+    max-width: 80%;
+    margin: 30px;
+    padding: 15px;
+    border: 2px solid rgb(76, 0, 255);
+    
+}
+*/
 
 .content_text{
     background-color: var(--primary);
@@ -495,6 +433,17 @@ h6{
     border: 2px solid rgb(255, 0, 43);
 }
 
+.content_picture{
+    border-radius: 35px; /*not working*/
+    border: solid;
+    width: 50%;
+    max-width: 80%;
+    width: 50%;
+    max-width: 80%;
+    margin: 30px auto;
+    padding: 15px;
+}
+
 /*  Comunity Page Mobile END!!!  */
 
 
@@ -502,23 +451,43 @@ h6{
     p{
         font-size: 25px;
     }
-    
+    .shop-items{
+        margin: 10px;
+    }
+    .btn{
+        text-align: center;
+        vertical-align: middle;
+        padding:.67em .67em;
+        cursor: pointer;
+    }
+    .btn-header{
+        margin: .5em 15% 2em 15%;
+        color: var(--secondary);
+    }
+    .btn-primary{
+        color: var(--secondary);
+        background-color: var(--primary);
+        border: none;
+        border-radius: .3em;
+        font-weight: bold;
+    }
+    .btn-primary:hover{
+        background-color: var(--headings);
+    }
     .mobile-Nav{
         display: none;
     }
-    
-   
     .webNav{
-        
+        display: block;
+        height: 50px;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         padding: 30px;
+        position: relative;
         align-items: center;
        background-color:var(--primary);
         text-transform: uppercase;
-        position: sticky;
-        top: 0px;
 
     }
     .webNav a{
@@ -526,38 +495,40 @@ h6{
         text-decoration: none;
         color: var(--paragrafs);
     }
-    .trolley{
-        display: flex;
-        padding: 8px;
-    }
     .iconshop{
         width: 10px;
+        padding: 5px;
     }
     .webNav a:hover{
         background-color:#a8d9db;
         color: var(--headings);
         border-radius: 10px;
     }
-    .motoImg{
-        width: 350px;
+    .shop-items{
+        display: flex;
+        width: 20%;
+    }
+    .shop-item-image{
+        width: 50%;
+    }
+    .shop-item-details{
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        padding: 5px;
         text-align: center;
+    }
+    .more{
+        position: absolute;
+        right: 10%;
+    }
+    .webNav img{
+        width: 350px;
     }
     .webNav a img{
         width: 26px;
         
     }
-    #webDropDown{
-        flex-direction: column;
-        z-index: 15;
-        background-color: var(--secondary);
-        position: absolute;
-        top: 20px;
-        left: 100px;
-        gap: 10px;
-        color: var(--primary);
-    }
-    .show{display: block;}
-
     .header{
         margin-top: 0px;
     }
@@ -611,8 +582,6 @@ h6{
         font-size: 26px;
 
     }
-    /*About us WEB*/
-    
     /*  productAbouy Page WEB  */
     
     .mainForContact{
@@ -624,7 +593,17 @@ h6{
         width: 80%;
         max-width: 40%;
     }
-    
+    .content_picture{
+        width: 80%;
+        max-width: 40%;
+    }
+
+    .content{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
 
 }
 
