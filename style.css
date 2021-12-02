@@ -275,7 +275,7 @@ span{
 #myDropDown{
     position: fixed;
     right: 0;
-    top: 7%;
+    top: 76px;
 
 }
 .show{display: block;}
