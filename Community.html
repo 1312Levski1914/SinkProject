@@ -7,9 +7,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="keywords" content=' web design blog,SaveWater,stop waste water'>
         <link rel="stylesheet" href="style.css">
+        <script src="./product.js"></script>
         <script src='./javascript.js'></script>
         <link href="http://fonts.cdnfonts.com/css/aqua-grotesque" rel="stylesheet">
         <link href='https://fonts.googleapis.com/css?family=Aclonica' rel='stylesheet'>
+        
     </head>
     <body>  
         <header>
@@ -56,8 +58,11 @@
                     </p>
                     <a href="#">Read more</a>
                 </div>
-                <div class="content_picture">
-                    <img src="./img/headerImg.png" alt="" width="100%">
+                <div id="myDropDown" class="dropDownContent">
+                    <a href="./product.html">Store</a>
+                    <a href="./about.html">About</a>
+                    <a href="./contact.html">Contact</a>
+                    <a href="/Community.html">Community</a>
                 </div>
                 <div class="content_text">
                     <h1><span>HOW</span> to save more water with water calculator</h1>
@@ -77,30 +82,42 @@
                     </p>
                     <a href="#">Read more</a>
                 </div>
-                <div class="content_picture">
-                    <img src="./img/sarah.jpg" alt="" width="100%">
+            </div>
+            <!-- Here start Cart-->
+            <section id = 'cart' class='container content-section'>
+                <h2 class="section-header">CART</h2>
+                <div class="cart-row">
+                    <span class="cart-item cart-header cart-column">ITEM</span>
+                    <span class="cart-price cart-header cart-column">PRICE</span>
+                    <span class="cart-quantity cart-header cart-column">QUANTITY</span>
                 </div>
                 <div class="content_text">
                     <h1><span>FAMOUS</span> people using our water pedal</h1>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores neque dicta magni earum asperiores illo dolor hic a nisi quos minus quae, velit temporibus tempora necessitatibus recusandae ipsam officiis laboriosam!</p>
                     <a href="#">Read more</a>
                 </div>
-
-            </section>
-
-            <section class='subscribe'>
-                <p>Subscribe with your E-mail and <span>get 20% off</span></p>
-                <input type="e-mail" placeholder="Please enter your E-Mail">
-                <div class= 'socialIcons'>
-                    <img src="./img/twiter.png" alt="twiter">
-                    <img src="./img/facebook.png" alt="facebook">
-                    <img src="./img/instagram.png" alt="instagram">
-                    <img src="./img/youtube.png" alt="youtube">
+                <div class="cart-total">
+                    <strong class="cart-total-title">Total ( 0 items)</strong>
+                    
                 </div>
+                <button class="btn btn-primary btn-purchase" type="button">Proceed to checkout</button>
             </section>
-        </main>
-        <footer>
-            <p>Copyright &copy; 2021, <br> <span>Moto</span> <span class='Aqua'>Aqua</span> </p>
-        </footer>
-    </body>
+        </nav>
+    </header>
+</section>
+<section class='subscribe'>
+    <p>Subscribe with your E-mail and <span>get 20% off</span></p>
+    <input type="e-mail" placeholder="Please enter your E-Mail">
+    <div class= 'socialIcons'>
+        <img src="./img/twiter.png" alt="twiter">
+        <img src="./img/facebook.png" alt="facebook">
+        <img src="./img/instagram.png" alt="instagram">
+        <img src="./img/youtube.png" alt="youtube">
+    </div>
+</section>
+</main>
+<footer>
+<p>Copyright &copy; 2021, <br> <span>Moto</span> <span class='Aqua'>Aqua</span> </p>
+</footer>
+</body>
 </html>
