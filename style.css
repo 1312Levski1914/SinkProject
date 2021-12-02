@@ -16,6 +16,14 @@ p{
 h1, h2, h3, h4, h5,h6 {
     font-family:'Aqua Grotesque', sans-serif ;
 }
+h5{
+    color: var(--primary);
+    font-weight: bolder;
+    
+}
+h6{
+    color: var(--headings);
+}
 .headings{
     font-size: 20px;
     font-family: 'Aqua Grotesque', sans-serif;;
@@ -50,14 +58,11 @@ span{
 
  /*                                                                                                                Shop List Start Here  */
  #shop{
-    margin-top: 10px;
-    background-color: var(--paragrafs);
+    background-color: #ffffff;
+    padding: 20px;
     
 }
-.shop-itemss{
-    margin: 10px;
- 
-}
+
 .btn{
     text-align: center;
     vertical-align: middle;
@@ -82,6 +87,7 @@ span{
     display: flex;
     flex-direction: column;
     margin-top: 80px;
+    
 }
 
 .shop-item-image{
@@ -100,6 +106,10 @@ span{
 #cart{
     background-color: var(--paragrafs);
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.section-header{
+    margin: 0px;
+    padding-top: 15px ;
 }
 .cart-header{
     font-weight: bold;
@@ -309,6 +319,9 @@ span{
     left: 50%;
     transform: translate(-50%, -50%);
 }
+.headerText h1{
+    opacity: 1;
+}
 /* Here                                                                                                                         Main start here  */
 main{
     display: flex;
@@ -321,6 +334,7 @@ main{
     padding: 15px;
     text-align: center;
     border-radius: 40px;
+    min-height: 250px;
 }
 .howItWorks video{
     margin-top: 38px;
@@ -354,7 +368,7 @@ main{
 
 }
 .fiveStars{
-    width: 50%;
+    width: 35%;
     height: 1%;
 }
 /* Here                                                                                                                         fooooter  */
@@ -384,7 +398,6 @@ main{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding-top: 30px;
 }
 
 .socialIcons img{
@@ -407,9 +420,16 @@ footer{
     color: var(--paragrafs);
 }
 
-/*  Style for Contact us Page Start here!   */
-.takeFeedBack{
+/*  Style for Contact us Page Start here! 
+  */
+  .mainForContact{
+    display: flex;
+    flex-direction: column;
     margin-top: 110px;
+    justify-content: center;
+}
+
+.takeFeedBack{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -427,19 +447,22 @@ footer{
     background-color: var(--primary);
     color: var(--secondary);
     height: 50px;
-    width: 50%;
+    width: 80%;
     font-size: 20px;
     padding: 10px;
 
 }
+.h2-in-Contact{
+    color: var(--primary);
+}
 .textInput{
     background-color: var(--primary);
-    height: 130px;
+    min-height: 130px;
     align-items: start;
     font-size: 20px;
 }
 .takeFeedBack ::placeholder{
-    text-align: left;
+    text-align: start;
     color: var(--secondary);
 }
 .feedBackButton{
@@ -461,6 +484,7 @@ footer{
 }
 .OurStaffMembers div img{
     width: 150px;
+    min-height: 200px;
 }
 
 /*About us page - mobile*/
@@ -599,7 +623,8 @@ footer{
         display: flex;
         flex-direction: row;
         width: 20%;
-        margin: 10px;
+        margin: 0;
+        gap: 40px;
     }
     .webNav a:hover{
         background-color:var(--secondary);
@@ -650,8 +675,7 @@ footer{
         height: 650px;
     }
     .headerText{
-        font-size: 36px;
-        padding: 80px 15px;
+        font-size: 26px;
     }
     .firstSection{
         display: flex;
@@ -775,17 +799,7 @@ footer{
 
 /*    End of About product Page WEB  alex  */
 
-    .mainForContact{
-        display: flex;
-        flex-direction: column;
-        margin-top: 110px;
-        justify-content: center;
-    }
-    .h2-in-Contact{
-        color: var(--headings);
-        padding-left:40px;
-        
-    }
+   
     .info{
         color: var(--primary);
     }
