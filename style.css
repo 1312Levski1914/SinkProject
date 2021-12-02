@@ -385,9 +385,32 @@ h6{
 /*About us page - mobile*/
 .aboutus-heading1{
     text-align: center;
-    border: 2px solid yellow;
+    
 }
-
+.about-img{
+    width: 150px;
+    border-radius: 50%;
+    
+}
+.about-staff{
+    background-color: var(--primary);
+    width: 100%;
+    height: 100%;
+    border-radius: 15%;
+    color: var(--paragrafs);
+}
+.about-staff div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: space-between;
+    padding: 10px;
+}
+.about-staff div p{
+    width: 70%;
+    text-align: center;
+}
 /*  Comunity Page Mobile!!!  */
 
 .community-text-center{
@@ -572,6 +595,8 @@ h6{
         font-size: 26px;
 
     }
+    /*About us WEB*/
+    
     /*  productAbouy Page WEB  */
     
     .mainForContact{
