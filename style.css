@@ -34,6 +34,7 @@ span{
 }
 #shop{
     display: none;
+    
 }
 
 .container{
@@ -43,9 +44,11 @@ span{
  /*                                                                                                                Shop List Start Here  */
  #shop{
     margin-top: 10px;
+    
 }
 .shop-itemss{
     margin: 10px;
+ 
 }
 .btn{
     text-align: center;
@@ -69,14 +72,9 @@ span{
 }
 .shop-items{
     display: flex;
-    width: 20%;
-    margin: 10px;
+    flex-direction: column;
 }
-.shop-itemss{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
+
 .shop-item-image{
     width: 150px;
     height: 150px;
@@ -571,6 +569,12 @@ h6{
     }
     .iconshop{
         width: 10px;
+    }
+    .shop-items{
+        display: flex;
+        flex-direction: row;
+        width: 20%;
+        margin: 10px;
     }
     .webNav a:hover{
         background-color:var(--secondary);
