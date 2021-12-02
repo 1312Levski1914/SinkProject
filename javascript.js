@@ -39,18 +39,39 @@ function openBurgerMenu() {
     let dropdown = document.getElementById('webDropDown');
     dropdown.style.display = 'flex';
 }
-function showProduct(){
-    let productsE1 = document.getElementById('shop');
-
-    productsE1.style.display = 'block';
-    document.getElementById('shop').style.display = 'block';
-    if(productsE1.display == 'block'){
-        productsE1.display = 'none';
+function mobileCart(){
+    let div = document.getElementById('shop');
+    if(div.style.display !== 'none'){
+        div.style.display = 'none';
+    }else{
+        div.style.display = 'block';
     }
+    showCart();
+}
+function showProduct(){
+   
+    let shop = document.getElementById('ShopButton');
+    
+    shop.onclick = function(){
+        let div = document.getElementById('shop');
+        if(div.style.display !== 'none'){
+            div.style.display = 'none';
+        }else{
+            div.style.display = 'block';
+        }
+    }
+    
+    
 }
 function showCart(){
     let cart = document.getElementById('cart');
-    cart.style.display='block';
+        if(cart.style.display !== 'none'){
+            cart.style.display = 'none';
+        }else{
+            cart.style.display = 'block';
+        }
+    
+    
 }
 const productsE1 = document.querySelector('.shop-items');
 const cartProductE = document.querySelector('.cart-items');
@@ -153,4 +174,3 @@ function changeNumberOfUnits(action,id){
     })
     updateCart();
 }
-showItem()

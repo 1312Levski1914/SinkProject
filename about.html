@@ -7,17 +7,17 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="keywords" content=' web design blog,SaveWater,stop waste water'>
         <link rel="stylesheet" href="style.css">
-        <script src='./javascript.js' async></script>
         <script src="./product.js"></script>
+        <script src='./javascript.js' async></script>
         <link href="http://fonts.cdnfonts.com/css/aqua-grotesque" rel="stylesheet">
         <link href='https://fonts.googleapis.com/css?family=Aclonica' rel='stylesheet'>
     </head>
     <body>      
         <header>
-             <!-- Navigation for Mobile-->
-             <nav>
+            <!-- Navigation for Mobile-->
+            <nav>
                 <section class="mobile-Nav">
-                    <img onclick="showProduct(),showCart()" class = 'shopIcon' src="./img/iconShop.png" width="20%" alt="icon shop">
+                    <img onclick="mobileCart()" id="shopMobiel" class = 'shopIcon' src="./img/iconShop.png" width="20%" alt="icon shop">
                     <img class='logo' src="./img/motoaqua.png" alt="logo">
                     <div id="burger-button" class= 'dropBurger' onclick = 'openBurgerMenu()'>
                         <div class="bar1"></div>
@@ -33,18 +33,20 @@
                 </section>
                 <!-- Nav for Web!!! -->
                 <section class= 'webNav'>
-                    <a style = 'order: 3 ;flex-grow: 2' href="#" onclick="showProduct()">Shop</a>
+                    <a id= 'ShopButton' style = 'order: 3 ;flex-grow: 2' href="#" onclick="showProduct()">Shop</a>
                     <div style = 'order: 1; flex-grow: 100' class="motoImg">
                         <img style = 'order: 1; flex-grow: 100' class= 'motoImg' src="./img/motoaqua.png" alt="logo fail">
                     </div>
-                    <a style = 'order: 0 ;flex-grow: 2' class="more" onclick="showMore()" href="#">More
-                        <div id='webDropDown'>
-                            <a href="./product.html">Store</a>
-                            <a href="./about.html">About</a>
-                            <a href="./contact.html">Contact</a>
-                            <a href="/Community.html">Community</a>
-                         </div>
-                    </a>
+                    <div class="dropdown">
+                        <div style = 'order: 0 ;flex-grow: 2' class="dropBtn" onclick="openMore()" href="#">More
+                            <div id='webDropDown' class= 'dropdown-content'>
+                                <a href="./product.html">Store</a>
+                                <a href="./about.html">About</a>
+                                <a href="./contact.html">Contact</a>
+                                <a href="/Community.html">Community</a>
+                            </div>
+                        </div>
+                    </div>
                     <a style = 'order: 2 ;flex-grow: 2'href="#">Login</a>
                     <a style="order: 4 ;flex-grow: 1" href="#" onclick="showCart()" class = 'trolley'>
                         <img  class= 'iconshop' src="./img/iconShop.png" alt="icon shop">
@@ -77,6 +79,10 @@
             </nav>
         </header>
         <main>
+
+            <!--- You can start code-->
+                   
+             <!--- You can start code-->
            <section class="alex-staff">
                <img src="" alt="">
            </section>

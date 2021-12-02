@@ -6,8 +6,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="keywords" content=' web design blog,SaveWater,stop waste water'>
         <link rel="stylesheet" href="style.css">
-        <script src='./javascript.js'></script>
         <script src="./product.js"></script>
+        <script src='./javascript.js' async></script>
         <link href="http://fonts.cdnfonts.com/css/aqua-grotesque" rel="stylesheet">
         <link href='https://fonts.googleapis.com/css?family=Aclonica' rel='stylesheet'>
     </head>
@@ -16,7 +16,7 @@
             <!-- Navigation for Mobile-->
             <nav>
                 <section class="mobile-Nav">
-                    <img onclick="showProduct(),showCart()" class = 'shopIcon' src="./img/iconShop.png" width="20%" alt="icon shop">
+                    <img onclick="mobileCart()" id="shopMobiel" class = 'shopIcon' src="./img/iconShop.png" width="20%" alt="icon shop">
                     <img class='logo' src="./img/motoaqua.png" alt="logo">
                     <div id="burger-button" class= 'dropBurger' onclick = 'openBurgerMenu()'>
                         <div class="bar1"></div>
@@ -32,7 +32,7 @@
                 </section>
                 <!-- Nav for Web!!! -->
                 <section class= 'webNav'>
-                    <a style = 'order: 3 ;flex-grow: 2' href="#" onclick="showProduct()">Shop</a>
+                    <a id= 'ShopButton' style = 'order: 3 ;flex-grow: 2' href="#" onclick="showProduct()">Shop</a>
                     <div style = 'order: 1; flex-grow: 100' class="motoImg">
                         <img style = 'order: 1; flex-grow: 100' class= 'motoImg' src="./img/motoaqua.png" alt="logo fail">
                     </div>
@@ -76,22 +76,11 @@
                     <button class="btn btn-primary btn-purchase" type="button">Proceed to checkout</button>
                 </section>
             </nav>
-            <section class= 'header'>
-                <img class= 'headerImg' src="./img/headerImg.png" alt="header error">
-                <span class="headerText headings">Change dishwashing forever</span>
-            </section>
         </header>
         <main class = 'mainForContact'>
-            <section class = 'takeFeedBack'>
-                <h2>
-                    Write us message
-                </h2>
-                <input class= 'nameInput' type="text" placeholder="Enter your name">
-                <input class= 'textInput' type="text" placeholder="Type your message...">
-                <input class= 'feedBackButton' type="button" value="Send">
-            </section>
+            
             <section>
-                <h2>Director:</h2> <hr>
+                <h2 class='h2-in-Contact'>Director:</h2> <hr>
                 <section class= 'OurStaffMembers'>
 
                     <div class="info">
@@ -107,12 +96,12 @@
                         <h6>A.Rasmussen@gmail.com</h6>
                     </div>
                     <div>
-                        <img src="./img/Pierre-Person.png" alt="">
+                        <img src="./img/Elize.jpeg" alt="">
                     </div>
                 </section>
             </section>
             <section >
-                <h2>Manager:</h2> <hr>
+                <h2  class='h2-in-Contact'>Manager:</h2> <hr>
                 <section class= 'OurStaffMembers'>
 
                     <div class="info">
@@ -128,9 +117,17 @@
                         <h6>S.Jackson@gmail.com</h6>
                     </div>
                     <div>
-                        <img src="./img/PERSON2.jpg" alt="">
+                        <img src="./img/Alex.jpeg" alt="">
                     </div>
                 </section>
+            </section>
+            <section class = 'takeFeedBack'>
+                <h2 class='h2-in-Contact'>
+                    Write us message
+                </h2>
+                <input class= 'nameInput' type="text" placeholder="Enter your name">
+                <input class= 'textInput' type="text" placeholder="Type your message...">
+                <input class= 'feedBackButton' type="button" value="Send">
             </section>
             <section class='subscribe'>
                 <p>Subscribe with your E-mail and <span>get 20% off</span></p>
