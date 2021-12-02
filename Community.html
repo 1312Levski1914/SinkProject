@@ -18,7 +18,7 @@
             <!-- Navigation for Mobile-->
             <nav>
                 <section class="mobile-Nav">
-                    <img class = 'shopIcon' src="./img/iconShop.jpg" width="20%" alt="icon shop">
+                    <img onclick="showProduct(),showCart()" class = 'shopIcon' src="./img/iconShop.png" width="20%" alt="icon shop">
                     <img class='logo' src="./img/motoaqua.png" alt="logo">
                     <div id="burger-button" class= 'dropBurger' onclick = 'openBurgerMenu()'>
                         <div class="bar1"></div>
@@ -26,24 +26,58 @@
                         <div class="bar3"></div>
                     </div>
                     <div id="myDropDown" class="dropDownContent">
-                        <a href="./index.html">Home</a>
-                        <a href="#">Store</a>
-                        <a href="#">About</a>
-                        <a href="#">Comunity</a>
+                        <a href="./product.html">Store</a>
+                        <a href="./about.html">About</a>
+                        <a href="./contact.html">Contact</a>
+                        <a href="/Community.html">Community</a>
                     </div>
                 </section>
                 <!-- Nav for Web!!! -->
                 <section class= 'webNav'>
-                    <a href="#">Shop</a>
-                    <img src="./img/motoaqua.png" alt="logo fail">
-                    <a class="more" href="#">More</a>
-                    <a href="#">Login</a>
+                    <a style = 'order: 3 ;flex-grow: 2' href="#" onclick="showProduct()">Shop</a>
+                    <div style = 'order: 1; flex-grow: 100' class="motoImg">
+                        <img style = 'order: 1; flex-grow: 100' class= 'motoImg' src="./img/motoaqua.png" alt="logo fail">
+                    </div>
+                    <div class="dropdown">
+                        <div style = 'order: 0 ;flex-grow: 2' class="dropBtn" onclick="openMore()" href="#">More
+                            <div id='webDropDown' class= 'dropdown-content'>
+                                <a href="./product.html">Store</a>
+                                <a href="./about.html">About</a>
+                                <a href="./contact.html">Contact</a>
+                                <a href="/Community.html">Community</a>
+                            </div>
+                        </div>
+                    </div>
+                    <a style = 'order: 2 ;flex-grow: 2'href="#">Login</a>
+                    <a style="order: 4 ;flex-grow: 1" href="#" onclick="showCart()" class = 'trolley'>
+                        <img  class= 'iconshop' src="./img/iconShop.png" alt="icon shop">
+                        <div class="total-item-in-cart">
+                            0
+                        </div>
+                    </a>
+                </section>
+                <div id='shop'>
+                    <div class="shop-items">
+                        
+                    </div>
+                </div>
+                <!-- Here start Cart-->
+                <section id = 'cart' class='container content-section'>
+                    <h2 class="section-header">CART</h2>
+                    <div class="cart-row">
+                        <span class="cart-item cart-header cart-column">ITEM</span>
+                        <span class="cart-price cart-header cart-column">PRICE</span>
+                        <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+                    </div>
+                    <div class="cart-items">                        
+                    </div>
+                    <div class="cart-total">
+                        <strong class="cart-total-title">Total ( 0 items)</strong>
+                        
+                    </div>
+                    <button class="btn btn-primary btn-purchase" type="button">Proceed to checkout</button>
                 </section>
             </nav>
-
-            <header class="community-text-center">
-                <h1>Learn from our Community</h1>
-            </header>
         </header>
         <main>
             <section class="content"> 
@@ -102,9 +136,6 @@
                 </div>
                 <button class="btn btn-primary btn-purchase" type="button">Proceed to checkout</button>
             </section>
-        </nav>
-    </header>
-</section>
 <section class='subscribe'>
     <p>Subscribe with your E-mail and <span>get 20% off</span></p>
     <input type="e-mail" placeholder="Please enter your E-Mail">
