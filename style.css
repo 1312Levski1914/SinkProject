@@ -629,6 +629,17 @@ h6{
         width: 80%;
         max-width: 40%;
     }
+    .content_picture{
+        width: 80%;
+        max-width: 40%;
+    }
+
+    .content{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
     
 
 }
