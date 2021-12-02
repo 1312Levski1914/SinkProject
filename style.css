@@ -478,6 +478,9 @@ footer{
         
     border: 2px solid yellow;
 }
+.content{
+    margin-top: 110px;
+}
 
 /*not needed, if I want the background going around the text
 .content{
