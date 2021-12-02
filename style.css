@@ -323,6 +323,7 @@ main{
     border-radius: 40px;
 }
 .howItWorks video{
+    margin-top: 38px;
     z-index: 1;
 }
 .HowWhat h2{
@@ -414,6 +415,9 @@ footer{
     justify-content: center;
     gap: 15px;
     padding: 15px;
+    width: 50%;
+    position: relative;
+    left: 25%;
 }
 .takeFeedBack h2{
     text-align: center;
@@ -446,6 +450,7 @@ footer{
     text-align: center;
     position: relative;
     left: 30%;
+    box-shadow: var(--headings);
 }
 .OurStaffMembers{
     width: 100%;
@@ -453,9 +458,6 @@ footer{
     font-size: 20px;
     justify-content: space-evenly;
    
-}
-h6{
-    color: var(--primary);
 }
 .OurStaffMembers div img{
     width: 150px;
@@ -544,160 +546,157 @@ h6{
 
 
 @media( min-width: 455px){
-    p{
-        font-size: 25px;
-    }
-    
-    .mobile-Nav{
-        display: none;
-    }
-    header{
-        position: fixed;
-        top: 0px;
-        left: 0px;
-        width: 100%;
-        z-index: 33;
-    }
-    .webNav{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        padding: 30px;
-        align-items: center;
-        background-color:var(--primary);
-        text-transform: uppercase;
-    }
-    .webNav a{
-        font-size: 26px;
-        text-decoration: none;
-        color: var(--paragrafs);
-        padding: 5px;
-    }
-    .dropBtn{
-        font-size: 26px;
-        text-decoration: none;
-        color: var(--paragrafs);
-        padding: 5px;
-        cursor: pointer;
-    }
-    .dropBtn:hover{
-        background-color:var(--secondary);
-        color: var(--headings);
-        border-radius: 10px;
-    }
-    .trolley{
-        display: flex;
-        padding: 8px;
-    }
-    .iconshop{
-        width: 10px;
-    }
-    .shop-items{
-        display: flex;
-        flex-direction: row;
-        width: 20%;
-        margin: 10px;
-    }
-    .webNav a:hover{
-        background-color:var(--secondary);
-        color: var(--headings);
-        border-radius: 10px;
-    }
-    .motoImg{
-        width: 350px;
-        text-align: center;
-    }
-    .webNav a img{
-        width: 26px;
-    }
-    .dropdown{
-        position: relative;
-        display: inline-block;
-    }
-    .dropdown-content{
-        display: none;
-        position: absolute;
-        background-color: var(--secondary);
-        min-width: 160px;
-        text-decoration: underline;
-        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-        z-index: 10;
-    }
-    .dropdown-content a{
-        color: var(--primary);
-        padding: 12px 16px;
-        text-decoration: none;
-        display: block;
-    }
-    
-    .dropdown-content a:hover{background-color: var(--primary);}
-    #webDropDown{
-        flex-direction: column;
-        z-index: 15;
-        background-color: var(--secondary);
-        gap: 10px;
-        color: var(--primary);
-    }
-    .show{display: block;}
+p{
+    font-size: 25px;
+}
 
-    .header{
-        margin-top: 0px;
-    }
-    .headerImg{
-        margin-top: 110px;
-        height: 650px;
-    }
-    .headerText{
-        font-size: 36px;
-        padding: 80px 15px;
-    }
-    .firstSection{
-        display: flex;
-        padding: 100px;
-        justify-content: space-around;
-    }
-    .sound-home{
-        display: flex;
-    }
-    .HowWhat{
-        width: 300px;
-        height: 100%;
-        font-size: 26px;
-    }
-    .paragrafs{
-        font-size: 26px;
-    }
-    .review{
-        display: flex;
-        justify-content: space-around;
-        border-radius: 30px;
-        width: 100%;
+.mobile-Nav{
+    display: none;
+}
+header{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: 33;
+}
+.webNav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 30px;
+    align-items: center;
+    background-color:var(--primary);
+    text-transform: uppercase;
+}
+.webNav a{
+    font-size: 26px;
+    text-decoration: none;
+    color: var(--paragrafs);
+    padding: 5px;
+}
+.dropBtn{
+    font-size: 26px;
+    text-decoration: none;
+    color: var(--paragrafs);
+    padding: 5px;
+    cursor: pointer;
+}
+.dropBtn:hover{
+    background-color:var(--secondary);
+    color: var(--headings);
+    border-radius: 10px;
+}
+.trolley{
+    display: flex;
+    padding: 8px;
+}
+.iconshop{
+    width: 10px;
+}
+.shop-items{
+    display: flex;
+    flex-direction: row;
+    width: 20%;
+    margin: 10px;
+}
+.webNav a:hover{
+    background-color:var(--secondary);
+    color: var(--headings);
+    border-radius: 10px;
+}
+.motoImg{
+    width: 350px;
+    text-align: center;
+}
+.webNav a img{
+    width: 26px;
+}
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: var(--secondary);
+    min-width: 160px;
+    text-decoration: underline;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 10;
+}
+.dropdown-content a{
+    color: var(--primary);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
 
-    }
-    .reviewImg{
-        width: 300px;
-    }
-    .review div h2{
-        font-size: 36px;
-    }
-    .review div span{
-        font-size: 36px
-    }
-    .fiveStars{
-        height: 50px;
-        margin: 30px;
-    }
-    main{
-        gap: 100px;
-    }
-    .subscribe{
-        padding: 50px;
-    }
-    .subscribe p{
-        font-size: 26px;
-
-    }
-    /*  About product Page WEB  alex  */
+.dropdown-content a:hover{background-color: var(--primary);}
+#webDropDown{
+    flex-direction: column;
+    z-index: 15;
+    background-color: var(--secondary);
+    gap: 10px;
+    color: var(--primary);
+}
+.show{display: block;}
+.header{
+    margin-top: 0px;
+}
+.headerImg{
+    margin-top: 110px;
+    height: 650px;
+}
+.headerText{
+    font-size: 36px;
+    padding: 80px 15px;
+}
+.firstSection{
+    display: flex;
+    padding: 100px;
+    justify-content: space-around;
+}
+.sound-home{
+    display: flex;
+}
+.HowWhat{
+    width: 300px;
+    height: 100%;
+    font-size: 26px;
+}
+.paragrafs{
+    font-size: 26px;
+}
+.review{
+    display: flex;
+    justify-content: space-around;
+    border-radius: 30px;
+    width: 100%;
+}
+.reviewImg{
+    width: 300px;
+}
+.review div h2{
+    font-size: 36px;
+}
+.review div span{
+    font-size: 36px
+}
+.fiveStars{
+    height: 50px;
+    margin: 30px;
+}
+main{
+    gap: 100px;
+}
+.subscribe{
+    padding: 50px;
+}
+.subscribe p{
+    font-size: 26px;
+}
+/*  About product Page WEB  alex  */
 
 .flexingsounds1{
     display: flex;
@@ -736,7 +735,7 @@ h6{
 text-align: center;
 }
 summary {
-    background-color: #fff;
+    background-color: var(--paragrafs);
     color: #333;
     padding: 1rem;
     margin-bottom: 1rem;
@@ -772,18 +771,27 @@ summary {
   .textfaq{
       text-align: center;
   }
-  @media( min-width: 1200px){
-    .soundsgallery{
-        display: flex;
-        justify-content: space-evenly;
-    }
-}
+  
 /*  End of About product Page WEB  alex  */
     
     .mainForContact{
         display: flex;
         flex-direction: column;
+        margin-top: 110px;
+        justify-content: center;
     }
+    .h2-in-Contact{
+        color: var(--headings);
+        padding-left:40px;
+        
+    }
+    .info{
+        color: var(--primary);
+    }
+    .userInfo{
+        color: var(--headings);
+    }
+   
     /*  Comunity Page WEB!!!  */
     .content_text{
         width: 80%;
@@ -801,7 +809,14 @@ summary {
         flex-wrap: wrap;
     }
 
-    /* Web version About us Page   */
+/* Web version About us Page   */
     
-}
 
+
+}
+@media( min-width: 1200px){
+    .soundsgallery{
+        display: flex;
+        justify-content: space-evenly;
+    }
+}
