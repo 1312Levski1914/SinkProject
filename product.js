@@ -9,10 +9,10 @@ const products = [
     },
     {
         id:1,
-        name: 'Classic Pedal',
-        price: 699.50,
+        name: 'Sport pedal',
+        price: 1235.99,
         instock: 10,
-        imgSrc: './img/pedalSink.jpg' ,
+        imgSrc: './img/sportPedal.jpg' ,
         numberofUnits: 0,
     },
 ]

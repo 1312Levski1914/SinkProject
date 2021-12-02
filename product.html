@@ -13,8 +13,8 @@
     </head>
     <body>      
         <header>
-            <!-- Navigation for Mobile-->
-            <nav>
+             <!-- Navigation for Mobile-->
+             <nav>
                 <section class="mobile-Nav">
                     <img onclick="showProduct(),showCart()" class = 'shopIcon' src="./img/iconShop.png" width="20%" alt="icon shop">
                     <img class='logo' src="./img/motoaqua.png" alt="logo">
@@ -36,14 +36,16 @@
                     <div style = 'order: 1; flex-grow: 100' class="motoImg">
                         <img style = 'order: 1; flex-grow: 100' class= 'motoImg' src="./img/motoaqua.png" alt="logo fail">
                     </div>
-                    <a style = 'order: 0 ;flex-grow: 2' class="more" onclick="showMore()" href="#">More
-                        <div id='webDropDown'>
-                            <a href="./product.html">Store</a>
-                            <a href="./about.html">About</a>
-                            <a href="./contact.html">Contact</a>
-                            <a href="/Community.html">Community</a>
-                         </div>
-                    </a>
+                    <div class="dropdown">
+                        <div style = 'order: 0 ;flex-grow: 2' class="dropBtn" onclick="openMore()" href="#">More
+                            <div id='webDropDown' class= 'dropdown-content'>
+                                <a href="./product.html">Store</a>
+                                <a href="./about.html">About</a>
+                                <a href="./contact.html">Contact</a>
+                                <a href="/Community.html">Community</a>
+                            </div>
+                        </div>
+                    </div>
                     <a style = 'order: 2 ;flex-grow: 2'href="#">Login</a>
                     <a style="order: 4 ;flex-grow: 1" href="#" onclick="showCart()" class = 'trolley'>
                         <img  class= 'iconshop' src="./img/iconShop.png" alt="icon shop">
