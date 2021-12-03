@@ -174,3 +174,6 @@ function changeNumberOfUnits(action,id){
     })
     updateCart();
 }
+function playAudio(url) {
+    new Audio(url).play();
+    }

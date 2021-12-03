@@ -4,7 +4,7 @@ const products = [
         name: 'Classic Pedal',
         price: 699.50,
         instock: 10,
-        imgSrc: './img/pedalSink.jpg',
+        imgSrc: './img/pedalsink.jpg',
         numberofUnits: 0,
     },
     {
