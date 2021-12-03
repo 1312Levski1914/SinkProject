@@ -475,8 +475,6 @@ footer{
     z-index: 1;
     margin-top: 130px;
     text-align: center;
-        
-    border: 2px solid yellow;
 }
 
 
@@ -502,32 +500,6 @@ footer{
     margin: 30px auto;
     padding: 15px;
     text-align: center;
-    border: 2px solid rgb(255, 0, 43);
-}
-
-.content_picture{
-    border-radius: 35px; /*not working*/
-    border: solid;
-    width: 50%;
-    max-width: 80%;
-    margin: 30px auto;
-    padding: 15px;
-    margin-bottom: 30px;
-}
-
-/*  Comunity Page Mobile END!!!  */
-
-
-
-.content_text{
-    background-color: var(--primary);
-    border-radius: 35px ;
-    width: 50%;
-    max-width: 80%;
-    margin: 30px auto;
-    padding: 15px;
-    text-align: center;
-    border: 2px solid rgb(255, 0, 43);
 }
 
 .content_picture{
